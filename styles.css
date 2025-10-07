@@ -651,3 +651,21 @@ p.lead {
   border: 2px solid rgb(242, 242, 242);
 }
 
+#about {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#about .card {
+  max-width: 700px;
+  margin: 40px auto 0;
+  padding: 28px 36px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#about .lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #eee;
+}
