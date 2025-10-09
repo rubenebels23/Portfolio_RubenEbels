@@ -1,6 +1,4 @@
 
-
-
 //  Mobile menu toggle
 
 const menuToggleBtn = document.getElementById("menuToggle");
@@ -36,9 +34,9 @@ menuLinks.forEach(function (link) {
   link.addEventListener("click", closeMenu);
 });
 
-/*******************************************
- * 3) Reveal-on-scroll animations (IntersectionObserver)
- *******************************************/
+
+//  Reveal-on-scroll animations (IntersectionObserver)
+
 const revealObserverOptions = { threshold: 0.15 };
 const revealObserver = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {

@@ -334,31 +334,41 @@ p.lead {
 
 /* Marquee */
 .marquee-wrap {
-  border-top: 1px solid var(--border);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  border-top: 0px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 16px 0;
-  margin: 40px 0;
+  margin-top: 20px; /* pushes it slightly down */
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.015),
     rgba(255, 255, 255, 0.01)
   );
 }
+
 .marquee {
   display: flex;
   gap: 40px;
   white-space: nowrap;
-  animation: marquee 26s linear infinite;
+  animation: marquee 16s linear infinite;
 }
+
 .marquee b {
   opacity: 0.7;
 }
+
 @keyframes marquee {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(50%);
+    transform: translateX(30%);
   }
 }
 
@@ -484,7 +494,7 @@ p.lead {
     filter 0.2s ease;
 }
 .btn-primary:hover {
-  filter: brightness(1.30);
+  filter: brightness(1.3);
 }
 .btn-primary:active {
   transform: translateY(1px) scale(0.99);
@@ -633,7 +643,7 @@ p.lead {
 }
 
 /* instagram */
-  .instagram-laser {
+.instagram-laser {
   display: inline-block;
   padding: 8px;
   border: 2px solid rgb(150, 62, 167);
